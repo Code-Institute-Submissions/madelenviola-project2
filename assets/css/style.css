@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
 
 * {
     margin: 0;
@@ -7,16 +7,39 @@
 }
 
 body {
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
     background-size: cover;
     background-image: url("/assets/images/background-image.jpg");
     width: auto;
+    color: #ffffff;
+}
+
+h1, h2 {
+    font-family: Nunito, sans-serif;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+/*  logo  */
+
+#logo {
+font-size: 280%;
+display: flex;
+justify-content: center;
+text-decoration: none;
+padding-top: 50px;
+color: #6473b7;
+}
+
+#logo a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
 }
 
 /*  button  */
 .button {
     background-color: #7282cc;
+    font-family: Nunito, sans-serif;
     border-radius: 32px;
     margin: 20px, 20px;
     display: inline-block;
@@ -25,6 +48,11 @@ body {
     padding: 10px 20px;
     color: #ffffff;
     font-weight: 700;
+    transition: all 0.2s;
+    font-size: 0.875em;
+    width: 100%;
+    min-width: 130px;
+    max-width: 150px;
 }
 
 /*  list container  */
@@ -34,15 +62,30 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f8ebb9;
-    height: 50vh;
-    margin-top: 100px;
+    height: auto;
+    min-height: 10vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
 
 /*  input field  */
 input[type=text] {
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+    width: auto;
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
     box-shadow: inset 0px 0px 4px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    resize: vertical;
+    
+}
+
+input::placeholder {
+    color: #a6b2e8;
 }
