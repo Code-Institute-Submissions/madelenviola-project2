@@ -15,13 +15,36 @@
             <a href="index.html">
                 <h1 id="logo">DoneByBedtime</h1>
             </a>
+            <form id="to-do-form">
+                <input 
+                type="text"
+                id="add-task-field"
+                placeholder="Write your task here" />
+                <input
+                type="submit"
+                id="add-task-submit"
+                value="+ add task" />
+                </form>
         </section>
     </header>
-    <section>
-    <div class="list-container">
-        <input id="add-task-field" type="text" placeholder="Write your task here">
-        <button class="button" id="push">+ Add task</button>
-    </div>
-    </section>
+        <section class="to-do-list">
+         <h2>To-do</h2>
+         <div id="to-dos">
+         <div class="to-do">
+            <input
+              type="text"
+              class="text"
+              value="My to-to task"
+              readonly
+
+              />
+         </div>
+         <div class="actions">
+            <button class="edit-task">Edit</button>
+            <button class="delete-task">Delete</button>
+         </div>
+         </div>
+        </section>
+<script src="/assets/js/script.js"></script>
 </body>
 </html>
