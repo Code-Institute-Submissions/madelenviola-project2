@@ -10,18 +10,19 @@ body {
     font-family: Nunito, sans-serif;
     font-weight: 800;
     background-size: cover;
+    background-repeat: repeat;
     background-image: url("/assets/images/background-image.jpg");
-    width: auto;
+    width: 100vw;
+    height: auto;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    position: absolute;
 }
 
 header {
-padding: 2rem 1rem;
+padding: 1rem 1rem;
 max-width: 800px;
-width: 100%;
 margin: 0 auto;
 }
 
@@ -30,6 +31,7 @@ h1, h2 {
     text-decoration: none;
     font-weight: 800;
     color: #6473b7;
+    font-size: 1.2rem;
 }
 
 /*  logo  */
@@ -61,28 +63,39 @@ button {
     font-weight: 700;
     transition: all 0.2s;
     font-size: 0.775em;
-    width: 80%;
     min-width: 40px;
     max-width: 100px;
 }
 
 /*  form  */
+.content-form {
+    justify-content: center;
 
+}
 .form-container {
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    justify-content: center;
     background-color: #f8ebb9;
     border-radius: 10px;
-    min-width: 400px;
-    min-height: 100px;
-    max-width: 70%;
-    justify-content: center;
-    margin: 0 auto;
+    min-height: 160px;
+    width: 70vw;
+    max-width: 620px;
+    min-width: 300px;
     flex-direction: column;
+    position: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: -20px;
 
 }
 
 #to-do-form {
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -97,7 +110,8 @@ button {
     border-radius: 10px;
     padding: 10px;
     margin-right: 10px;
-    width: 70%;
+    width: 70vw;
+    max-width: 620px;
     box-shadow: inset 0px 0px 3px rgba(0,0,0,0.5);
 }
 
@@ -122,8 +136,8 @@ button {
     border-radius: 10px;
     padding: 10px;
     margin-right: 10px;
-    width: 90%;
     padding-bottom: 20px;
+    display: inline;
 }
 
 #task-submissions span {
@@ -146,7 +160,7 @@ button {
     font-weight: 700;
     transition: all 0.2s;
     font-size: 0.775em;
-    width: 70px;
+    width: 100%;
     min-width: 40px;
     max-width: 100px;
 
@@ -158,8 +172,13 @@ button {
 }
 
 #todoList, h2{
-    color: #5364b2;
+    color: #7282cc;
     margin-top: 15px;
     margin-left: 15px;
+
+}
+
+/* For small screen sizes from 400px and down */
+@media screen and (max-width: 400px) {
 
 }
