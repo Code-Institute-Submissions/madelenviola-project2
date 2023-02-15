@@ -65,6 +65,7 @@ button {
     font-size: 0.775em;
     min-width: 40px;
     max-width: 100px;
+    cursor: pointer;
 }
 
 /*  form  */
@@ -141,10 +142,21 @@ button {
     display: inline;
 }
 
+ul li:hover {
+    background-color: #c8cde6;
+}
+
 #task-submissions span {
     font-family: Nunito, sans-serif;
     font-weight: 700;
     color: #7282cc;
+
+}
+
+#task-submissions span:hover {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    background-color: #c8cde6;
 
 }
 
@@ -164,6 +176,7 @@ button {
     width: 100%;
     min-width: 40px;
     max-width: 100px;
+    cursor: pointer;
 
 }
 
