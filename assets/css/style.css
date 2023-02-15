@@ -85,7 +85,7 @@ button {
     padding-right: 10px;
 }
 
-#add-task-field {
+#addtaskField {
     font-family: Nunito, sans-serif;
     font-weight: 700;
     color: #7282cc;
@@ -98,7 +98,7 @@ button {
     box-shadow: inset 0px 0px 3px rgba(0,0,0,0.5);
 }
 
-#add-task-field::placeholder {
+#addtaskField::placeholder {
     font-family: Nunito, sans-serif;
     font-weight: 700;
     color: #8f9ddb;
