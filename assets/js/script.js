@@ -1,4 +1,4 @@
-function newElement(){
+function newElement() {
     let li = document.createElement('li');
     let taskValue = document.getElementById('addtaskField').value;
     let task = document.createTextNode(taskValue);
@@ -9,11 +9,11 @@ function newElement(){
         document.getElementById("todoList").appendChild(li);
     }
     document.getElementById("addtaskField").value = "";
-
-        for (i = 0; i > close.length; i++) {
-            close[i].onclick= function(){
-                let div = this.parentElement;
-                div.style.display = 'none';
-        }
+    const trashCan = document.createElement("span");
+    trashCan.className = ("fa-solid fa-trash");
+    trashCan.onclick = function(){
+    this.parentElement.remove();
     }
+    li.appendChild(trashCan);
+    
 }
