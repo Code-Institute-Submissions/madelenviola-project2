@@ -136,12 +136,13 @@ ul li:hover {
     background-color: #c8cde6;
 }
 
- span {
+span {
     font-family: Nunito, sans-serif;
     font-weight: 700;
     color: #7282cc;
 
-}
+ }
+
 
 span li:hover {
     font-family: Nunito, sans-serif;
@@ -150,7 +151,7 @@ span li:hover {
 
 }
 
- .button {
+.button {
     background-color: #7282cc;
     font-family: Nunito, sans-serif;
     border-radius: 16px;
@@ -175,6 +176,7 @@ span li:hover {
     list-style: none;
 }
 
+
 #todoList, h2{
     color: #7282cc;
     margin-top: 15px;
@@ -184,6 +186,20 @@ span li:hover {
 
 #todoList li {
     padding-bottom: 7px;
+}
+
+#todoList span {
+    padding-right: 30px;
+}
+
+input[type="checkbox" i] {
+    float: left;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+.fa-solid {
+    float: right;
 }
 
 /* For small screen sizes from 400px and down */
