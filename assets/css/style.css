@@ -119,6 +119,7 @@ button {
     font-family: Nunito, sans-serif;
     font-weight: 700;
     color: #8f9ddb;
+    font-size: 0.8rem;
 }
 #add-task-submit {
     display: flex;
@@ -176,6 +177,10 @@ button {
     margin-top: 15px;
     margin-left: 15px;
 
+}
+
+#todoList li {
+    padding-bottom: 7px;
 }
 
 /* For small screen sizes from 400px and down */
