@@ -29,6 +29,7 @@ h1, h2 {
     font-family: Nunito, sans-serif;
     text-decoration: none;
     font-weight: 800;
+    color: #6473b7;
 }
 
 /*  logo  */
@@ -52,7 +53,6 @@ button {
     background-color: #7282cc;
     font-family: Nunito, sans-serif;
     border-radius: 16px;
-    margin: 10px, 10px;
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -71,9 +71,12 @@ button {
 .form-container {
     background-color: #f8ebb9;
     border-radius: 10px;
-    min-width: 370px;
+    min-width: 400px;
     min-height: 100px;
+    max-width: 70%;
     justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
 
 }
 
@@ -94,7 +97,7 @@ button {
     border-radius: 10px;
     padding: 10px;
     margin-right: 10px;
-    width: 90%;
+    width: 70%;
     box-shadow: inset 0px 0px 3px rgba(0,0,0,0.5);
 }
 
@@ -114,33 +117,23 @@ button {
 }
 
 #task-submissions {
-    color: #7282cc;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
     margin-right: 10px;
     width: 90%;
+    padding-bottom: 20px;
 }
 
-.task-submissions {
-    color: #7282cc;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin-right: 10px;
-    width: 90%;
-}
-
-.task-submissions span {
+#task-submissions span {
     font-family: Nunito, sans-serif;
     font-weight: 700;
     color: #7282cc;
 
 }
 
-.task-submissions button {
+#task-submissions, .button {
     background-color: #7282cc;
     font-family: Nunito, sans-serif;
     border-radius: 16px;
@@ -153,8 +146,20 @@ button {
     font-weight: 700;
     transition: all 0.2s;
     font-size: 0.775em;
-    width: 40px;
+    width: 70px;
     min-width: 40px;
     max-width: 100px;
+
+}
+
+#todoList {
+    color: #5364b2;
+    list-style: none;
+}
+
+#todoList, h2{
+    color: #5364b2;
+    margin-top: 15px;
+    margin-left: 15px;
 
 }
