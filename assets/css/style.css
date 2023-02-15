@@ -11,7 +11,7 @@ body {
     font-weight: 800;
     background-size: cover;
     background-repeat: repeat;
-    background-image: url("/assets/images/background-image.jpg");
+    background-image: url("../images/background-image.jpg");
     width: 100vw;
     height: auto;
     color: #ffffff;
