@@ -1,3 +1,5 @@
+/**
+ * Adds a new TODO to the list.*/
 function newElement() {
     var li = document.createElement('li');
     var taskValue = document.getElementById('addtaskField').value;
@@ -25,4 +27,3 @@ function addTrashCan() {
     };
     return trashCan;
 }
-
