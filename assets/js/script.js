@@ -1,4 +1,3 @@
-
 /**
  * Adds a new TODO to the list.*/
 function newElement() {
