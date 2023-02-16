@@ -21,12 +21,13 @@ body {
 }
 
 header {
-padding: 1rem 1rem;
-max-width: 800px;
-margin: 0 auto;
+    padding: 1rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: Nunito, sans-serif;
     text-decoration: none;
     font-weight: 800;
@@ -37,16 +38,19 @@ h1, h2 {
 /*  logo  */
 
 #logo {
-font-size: 280%;
-display: flex;
-justify-content: center;
-text-decoration: none;
-padding-top: 50px;
-color: #6473b7;
-padding-bottom: 30px;
+    font-size: 280%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 50px;
+    color: #6473b7;
+    padding-bottom: 30px;
 }
 
-#logo a:hover, a:visited, a:link, a:active{
+#logo a:hover,
+a:visited,
+a:link,
+a:active {
     text-decoration: none;
 }
 
@@ -73,6 +77,7 @@ button {
     justify-content: center;
 
 }
+
 .form-container {
     top: 50%;
     left: 50%;
@@ -111,7 +116,7 @@ button {
     margin-right: 10px;
     width: 70vw;
     max-width: 620px;
-    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
 #addtaskField::placeholder {
@@ -120,6 +125,7 @@ button {
     color: #8f9ddb;
     font-size: 0.8rem;
 }
+
 #add-task-submit {
     display: flex;
     margin: 0 auto;
@@ -141,7 +147,7 @@ span {
     font-weight: 700;
     color: #7282cc;
 
- }
+}
 
 
 span li:hover {
@@ -176,21 +182,22 @@ span li:hover {
 }
 
 
-#todoList, h2{
+#todoList,
+h2 {
     color: #7282cc;
     margin-top: 15px;
 
 }
 
 #todoList li {
-    padding-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 #todoList span {
     padding-right: 30px;
 }
 
-input[type="checkbox" i] {
+input[type="checkbox"i] {
     float: left;
     margin-right: 10px;
     margin-left: 10px;
@@ -203,6 +210,4 @@ input[type="checkbox" i] {
 }
 
 /* For small screen sizes from 400px and down */
-@media screen and (max-width: 400px) {
-
-}
+@media screen and (max-width: 400px) {}
