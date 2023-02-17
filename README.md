@@ -1,5 +1,5 @@
 # DoneByBedtime
-The goal of this website is to increase visitor productivity and give the visitor a overview of tasks to be done for the day. This website let’s the visitor create a to-do list. When an item is done, it can be checked and you can remove the task item. 
+The goal of this website is to increase visitor productivity and give the visitor a overview of tasks to be done for the day. This website let’s the visitor create a to-do list. When an item is done, it can be checked off with a line-through the task. If you don't need a task anymore you can remove the task item by clicking the trash can icon. 
 
 [Here is a link to the project](https://madelenviola.github.io/project2)
 
@@ -7,10 +7,11 @@ The goal of this website is to increase visitor productivity and give the visito
 
 ## User Story
 ### Why users should visit the website
-- To create a to-do list
-- To check off tasks completed
-- To increase productivity
-- To get a overview of todays tasks
+- To create a to-do list.
+- To check off tasks completed.
+- Delete tasks.
+- To increase productivity.
+- To get a overview of todays tasks.
 
 ## Features
 ### Create to-do list
@@ -24,6 +25,7 @@ The goal of this website is to increase visitor productivity and give the visito
 ### Features and functions to be added in the future.
 - Plan ahead and make lists for multiple dates.
 - Custom message if field not filled in instead of alert.
+- Add task by pressing enter on keyboard.
 
 ## Typography and color scheme
 The font used is bold version of [Nunito from Google Fonts](https://fonts.google.com/specimen/Nunito) with sans-serif as fallback font. The font used was chosen to align with the look and feel of the design due to the soft and playful roundness. 
@@ -93,22 +95,31 @@ The let warning is directly called from HTML.
 ![JSHINT Validator result passed without errors](./assets/images/jshint-findings%20-compressed.png)
 
 ### PageSpeed Insights findings:
-- coming soon.
+![PageSpeed Insights findings score](./assets/images/pageinsights-compressed.png)
+
 
 ### User testing
-- coming soon.
+Manual testing:
+- Not writing a task in input window then clicking button gives alert message "Write a task for your to-do list".
+- Writing a task in input window and clicking the add task button, adds a task to to-do list. 
+- Clicking the checkbox gives visual que item is checked off by line-through on the task. 
+- Clicking again on the checkbox unchecks the box and line-through is no longer visible. 
+- Clicking the trash can icon removes task from to-do list. 
 
 ### Browsers
-- coming soon.
+- Google Chrome
+- Safari
+- Firefox
 
 ### Fixed bugs
-- coming soon.
+- Line-through not added when clicking box.
+- Local storage added
 
 ### Supported screens
 - Smartphone, tablet and desktop sizes. 
 
 ### Known bugs
-- coming soon.
+- If a two tasks have the same exact name there is a bug that makes action act on both tasks.
 
 ## Deployment
 - When you visit the GitHub repository, click on the Settings tab, and choose **Pages** from the menu
