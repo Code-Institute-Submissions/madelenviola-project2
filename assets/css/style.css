@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
 
-.strike-through {
-    text-decoration: line-through;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -77,11 +73,7 @@ button {
     cursor: pointer;
 }
 
-/*  form  */
-.content-form {
-    justify-content: center;
-
-}
+/*  input for add task to to-do list  */
 
 .form-container {
     top: 50%;
@@ -140,6 +132,8 @@ button {
     color: #ffffff;
     font-weight: 700;
 }
+
+/*  to-do list items  */
 
 ul li:hover {
     background-color: #d0d7fa;
@@ -202,6 +196,8 @@ h2 {
     padding-right: 30px;
 }
 
+/*  checkbox, delete task and line-through  */
+
 input[type="checkbox"] {
     float: left;
     margin-right: 10px;
@@ -214,6 +210,11 @@ input[type="checkbox"] {
     margin-top: 3px;
 }
 
+
+.strike-through {
+    text-decoration: line-through;
+}
+
 /*  footer  */
 
 footer {
@@ -222,12 +223,13 @@ footer {
     width: 100%;
     height: 20%;
     z-index: -1;
+    background-size: cover;
 }
 /*   media querie for smartphone  */
 @media (max-width: 480px) {
     body {
         background-image: url('../images/mobile-background-compressed.png');
-        background-repeat:no-repeat;
+        background-repeat: no-repeat;
     }
 }
 /*   media querie for tablet  */
