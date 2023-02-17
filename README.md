@@ -122,13 +122,16 @@ Manual testing:
 - If a two tasks have the same exact name there is a bug that makes action act on both tasks.
 
 ## Deployment
-- When you visit the GitHub repository, click on the Settings tab, and choose **Pages** from the menu
-- From source drop-down menu, choose **Master Branch**
-- When master branch has been selected, the page will refresh to show if deployment was successful. 
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Master Branch
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 # Credits
 
 Tutorial ”Learn how to create a "to-do list" with CSS and JavaScript” by [W3C Schools](https://www.w3schools.com/howto/howto_js_todolist.asp)
+
+ReadMe template [CodeInstitute readme template](https://github.com/Code-Institute-Solutions/readme-template)
 
 # Credits design elements
 - Background image featuring clouds from [Freepik](https://www.freepik.com/) by [Rawpixel.com](https://www.freepik.com/free-vector/cute-background-with-fluffy-cloud-pattern_16359188.htm)
