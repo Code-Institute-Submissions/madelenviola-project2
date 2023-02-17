@@ -22,13 +22,18 @@ var that = this;
 
 // }
 
+/**
+ * Adds the trashcan to the li
+ */
 function addTrashCan() {
     var trashCan = document.createElement("span");
     trashCan.className = ("fa-solid fa-trash");
     trashCan.onclick = deleteTask;
     return trashCan;
 }
-
+/**
+ * Toggles the task completion value in todoList and updates UI UI.
+ */
 function toggleTaskCompleted(event) {
     const element = event.target;
     const taskValue = element.parentElement.innerText;
@@ -54,6 +59,9 @@ function updateLocalStorage(){
     localStorage.setItem("todos", JSON.stringify(todoList));
 }
 
+/**
+ * Adds the taskValue from UI 
+ */
 function addTask() {
     const taskValue = document.getElementById('addtaskField').value;
     if (!taskValue) {
@@ -72,7 +80,9 @@ function saveTask(taskValue) {
     })
     updateLocalStorage();
 }
-
+/**
+ * Loads the tasks from localstorage into toDoList.
+ */
 function loadTasks() {
     const tasks = localStorage.getItem("todos");
     if (tasks) {
@@ -81,7 +91,9 @@ function loadTasks() {
 
     todoList.forEach((task) => renderTask(task.task));
 }
-
+/**
+ * Renders the tasks from todoList into UI.
+ */
 function renderTask(taskValue, completed = false) {
     var li = document.createElement('li');
     var task = document.createTextNode(taskValue);
