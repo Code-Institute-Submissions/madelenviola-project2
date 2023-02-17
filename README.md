@@ -80,7 +80,17 @@ CSS code passed in [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) wit
 ![HTML Validator result passed without errors](./assets/images/css-validation.png)
 
 ### JSHINT validator findings:
-- coming soon.
+- metrics:
+There are 11 functions in this file.
+Function with the largest signature take 2 arguments, while the median is 1.
+Largest function has 13 statements in it, while the median is 4.
+The most complex function has a cyclomatic complexity value of 2 while the median is 1.
+
+- Warnings:
+There are warnings related to ES6 but today this is supported by most browsers.
+The let warning is directly called from HTML.
+
+![JSHINT Validator result passed without errors](./assets/images/jshint-findings%20-compressed.png)
 
 ### PageSpeed Insights findings:
 - coming soon.
