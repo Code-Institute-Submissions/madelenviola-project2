@@ -1,11 +1,10 @@
-var todoList = [];
-var that = this;
+let todoList = [];
 /**
  * Adds a new TODO to the list.*/
 // function newElement() {
-//     var li = document.createElement('li');
-//     var taskValue = document.getElementById('addtaskField').value;
-//     var task = document.createTextNode(taskValue);
+//     let li = document.createElement('li');
+//     let taskValue = document.getElementById('addtaskField').value;
+//     let task = document.createTextNode(taskValue);
 //     li.appendChild(task);
 //     if (taskValue === '') {
 //         alert('Write a task for your to-do list');
@@ -15,7 +14,7 @@ var that = this;
 //     document.getElementById("addtaskField").value = "";
 
 //     li.appendChild(addTrashCan());
-//     var checkBox = document.createElement("input");
+//     let checkBox = document.createElement("input");
 //     checkBox.setAttribute("type", "checkbox");
 //     checkBox.onclick = toggleTaskCompleted;
 //     li.appendChild(checkBox);
@@ -25,7 +24,7 @@ var that = this;
  * Adds the trashcan to the li
  */
 function addTrashCan() {
-    var trashCan = document.createElement("span");
+    let trashCan = document.createElement("span");
     trashCan.className = ("fa-solid fa-trash");
     trashCan.onclick = deleteTask;
     return trashCan;
@@ -36,11 +35,20 @@ function addTrashCan() {
 function toggleTaskCompleted(event) {
     const element = event.target;
     const taskValue = element.parentElement.innerText;
-    var i = todoList.findIndex(o => o.task === taskValue);
-    todoList[i].completed = true;
-    that.updateLocalStorage();
-    element.parentElement.className = ("strike-through");
+
+    let i = todoList.findIndex(o => o.task === taskValue);
+    const completed = !todoList[i].completed;
+    todoList[i].completed = completed;
+
+    if (completed) {
+        element.parentElement.classList.add("strike-through");
+    } else {
+        element.parentElement.classList.remove("strike-through");
+    }   
+
+    updateLocalStorage();
 }
+
 /**
  * Deletes the task from UI and updates localstorage.
  * @param element The element corresponding to task to be deleted.
@@ -48,9 +56,9 @@ function toggleTaskCompleted(event) {
 function deleteTask(event) {
     const element = event.target;
     const taskValue = element.parentElement.innerText;
-    var i = todoList.findIndex(o => o.task === taskValue);
-    delete todoList[i];
-    that.updateLocalStorage();
+    let i = todoList.findIndex(o => o.task === taskValue);
+    todoList.splice(i, 1);
+    updateLocalStorage();
     element.parentElement.remove();
 }
 
@@ -90,27 +98,29 @@ function loadTasks() {
         todoList = JSON.parse(tasks);
     }
 
-    todoList.forEach((task) => renderTask(task.task));
+    todoList.forEach((task) => renderTask(task.task, task.completed));
 }
 /**
  * Renders the tasks from todoList into UI.
  */
 function renderTask(taskValue, completed = false) {
-    var li = document.createElement('li');
-    var task = document.createTextNode(taskValue);
+    let li = document.createElement('li');
+    let task = document.createTextNode(taskValue);
     li.appendChild(task);
-    if (completed) {
-        li.setAttribute("class", "strike-through");
-    }
-
+    
     document.getElementById("todoList").appendChild(li);
     document.getElementById("addtaskField").value = "";
-
+    
     li.appendChild(addTrashCan());
-    var checkBox = document.createElement("input");
+    let checkBox = document.createElement("input");
     checkBox.setAttribute("type", "checkbox");
     checkBox.onclick = toggleTaskCompleted;
     li.appendChild(checkBox);
+
+    if (completed) {
+        li.setAttribute("class", "strike-through");
+        checkBox.checked = true;
+    }
 }
 
 document.addEventListener("DOMContentLoaded", loadTasks);
