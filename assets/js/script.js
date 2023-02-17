@@ -5,7 +5,7 @@ let todoList = [];
  */
 function addTrashCan() {
     let trashCan = document.createElement("span");
-    trashCan.className = ("fa-solid fa-trash");
+    trashCan.className = "fa-solid fa-trash";
     trashCan.onclick = deleteTask;
     return trashCan;
 }
@@ -16,7 +16,7 @@ function toggleTaskCompleted(event) {
     const element = event.target;
     const taskValue = element.parentElement.innerText;
 
-    let i = todoList.findIndex(o => o.task === taskValue);
+    let i = todoList.findIndex((o) => o.task === taskValue);
     const completed = !todoList[i].completed;
     todoList[i].completed = completed;
 
@@ -24,7 +24,7 @@ function toggleTaskCompleted(event) {
         element.parentElement.classList.add("strike-through");
     } else {
         element.parentElement.classList.remove("strike-through");
-    }   
+    }
 
     updateLocalStorage();
 }
@@ -36,23 +36,23 @@ function toggleTaskCompleted(event) {
 function deleteTask(event) {
     const element = event.target;
     const taskValue = element.parentElement.innerText;
-    let i = todoList.findIndex(o => o.task === taskValue);
+    let i = todoList.findIndex((o) => o.task === taskValue);
     todoList.splice(i, 1);
     updateLocalStorage();
     element.parentElement.remove();
 }
 
-function updateLocalStorage(){
+function updateLocalStorage() {
     localStorage.setItem("todos", JSON.stringify(todoList));
 }
 
 /**
- * Adds the taskValue from UI 
+ * Adds the taskValue from UI
  */
 function addTask() {
-    const taskValue = document.getElementById('addtaskField').value;
+    const taskValue = document.getElementById("addtaskField").value;
     if (!taskValue) {
-        alert('Write a task for your to-do list');
+        alert("Write a task for your to-do list");
         return;
     }
 
@@ -65,7 +65,7 @@ function addTask() {
 function saveTask(taskValue) {
     todoList.push({
         task: taskValue,
-        completed: false
+        completed: false,
     });
     updateLocalStorage();
 }
@@ -84,13 +84,13 @@ function loadTasks() {
  * Renders the tasks from todoList into UI.
  */
 function renderTask(taskValue, completed = false) {
-    let li = document.createElement('li');
+    let li = document.createElement("li");
     let task = document.createTextNode(taskValue);
     li.appendChild(task);
-    
+
     document.getElementById("todoList").appendChild(li);
     document.getElementById("addtaskField").value = "";
-    
+
     li.appendChild(addTrashCan());
     let checkBox = document.createElement("input");
     checkBox.setAttribute("type", "checkbox");
