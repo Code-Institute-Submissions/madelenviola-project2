@@ -19,7 +19,6 @@ var that = this;
 //     checkBox.setAttribute("type", "checkbox");
 //     checkBox.onclick = toggleTaskCompleted;
 //     li.appendChild(checkBox);
-
 // }
 
 /**
