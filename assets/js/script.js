@@ -66,7 +66,7 @@ function saveTask(taskValue) {
     todoList.push({
         task: taskValue,
         completed: false
-    })
+    });
     updateLocalStorage();
 }
 /**
