@@ -70,7 +70,7 @@ The wireframe was created in [Balsamiq](https://balsamiq.com/)
 ### Code validation
 - HTML tested via [W3C](https://validator.w3.org/)
 - CSS tested via [W3C](https://jigsaw.w3.org/css-validator/)
-- JavaScript tested via 
+- JavaScript tested via [JSHINT](https://jshint.com/)
 - Accessability, performance, best practises and seo check by [PageSpeed Insights](https://pagespeed.web.dev/)
 
 ### W3C HTML validator findings:
