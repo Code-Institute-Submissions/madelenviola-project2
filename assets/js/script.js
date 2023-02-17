@@ -1,24 +1,4 @@
 let todoList = [];
-/**
- * Adds a new TODO to the list.*/
-// function newElement() {
-//     let li = document.createElement('li');
-//     let taskValue = document.getElementById('addtaskField').value;
-//     let task = document.createTextNode(taskValue);
-//     li.appendChild(task);
-//     if (taskValue === '') {
-//         alert('Write a task for your to-do list');
-//     } else {
-//         document.getElementById("todoList").appendChild(li);
-//     }
-//     document.getElementById("addtaskField").value = "";
-
-//     li.appendChild(addTrashCan());
-//     let checkBox = document.createElement("input");
-//     checkBox.setAttribute("type", "checkbox");
-//     checkBox.onclick = toggleTaskCompleted;
-//     li.appendChild(checkBox);
-// }
 
 /**
  * Adds the trashcan to the li
