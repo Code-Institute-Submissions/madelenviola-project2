@@ -32,7 +32,7 @@ function addTrashCan() {
     return trashCan;
 }
 /**
- * Toggles the task completion value in todoList and updates UI UI.
+ * Toggles the task completion value in todoList and updates UI.
  */
 function toggleTaskCompleted(event) {
     const element = event.target;
@@ -72,7 +72,9 @@ function addTask() {
     renderTask(taskValue);
     saveTask(taskValue);
 }
-
+// * Saves the task from UI and updates localstorage.
+//  * @param taskValue The taskValue corresponding to the task being saved.
+//  */
 function saveTask(taskValue) {
     todoList.push({
         task: taskValue,
